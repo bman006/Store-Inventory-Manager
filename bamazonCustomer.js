@@ -54,15 +54,15 @@ var connection = mysql.createConnection({
                 name: `numToBuy`,
                 message: `How many ${productChosenName} would you like?`,
                 validate: function(input) {
-                    input = Number(input);
-                    var checker;
-                    if (typeof input === `number`) {
-                        checker = true;
-                    }
-                    else {
-                        checker = false;
-                    }
-                    return checker;
+                    // input = Number(input);
+                    var checker = isNaN(input);
+                    // if (typeof input === `number`) {
+                    //     checker = true;
+                    // }
+                    // else {
+                    //     checker = false;
+                    // }
+                    return !checker;
                 }
             }
         ]).then(function(answers) {
@@ -99,21 +99,9 @@ var connection = mysql.createConnection({
                 );
             }
             else {
-                console.log(`Insufficient quantity!`);
+                connection.end();
+                return console.log(`Insufficient quantity!`);
             }
         });
-
     });
- 
-});
-   
-
-
-
-
-
-//Fill order or tell user there are enough items available
-
-//Summarize total cost of purchase
-
-
+ });
