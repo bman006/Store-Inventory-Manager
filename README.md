@@ -30,7 +30,7 @@ Create an app that will:
     ![Demo](assets/images/demo_terminal02.png)
     ![Demo](assets/images/demo_terminal07.png)
 
-    * After entering the order quantity, the app will summarize the customer's order, and adjust the inventory in the database to reflect the reduction in inventory  
+    * After entering the order quantity, the app will summarize the customer's order, and adjust the inventory in the database to reflect the reduction in stock  
     ![Demo](assets/images/demo_terminal08.png)
     ![Demo](assets/images/demo_mysql02.png)
 
@@ -45,9 +45,3 @@ Create an app that will:
     * If the user attempts to purchase more items than the total inventory of the store, the app will alert the user of the lack of inventory, and the app will close  
     ![Demo](assets/images/demo_terminal05.png)
     ![Demo](assets/images/demo_terminal06.png)
-
-
-### Readme outline points
-1. What is the section doing
-1. What is being used to code it (key API's and functions)
-1. What are some key ideas or methodologies used to code the section
